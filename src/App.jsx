@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Features, Footer, Hero, How, Navbar, Pricing, Team } from './components'
 
 function App() {
   
 
   return (
     <>
-      App
+      <Navbar />
+      <Hero />
+      <Features />
+      <How />
+      <Pricing />
+      <Team />
+      <Footer />
     </>
   )
 }
