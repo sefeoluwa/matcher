@@ -24,18 +24,24 @@ body {
   min-height: 100vh;
 }
 
+.hero-container{
+ 
+  
+}
+
+.hero-text{
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+    background-color: #f2f2f2;
   }
 }
 
