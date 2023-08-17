@@ -27,10 +27,10 @@ function Navbar() {
     <>
        {/* Desktop Navbar */}
        <nav className="nav-full sticky top-0 flex md:flex justify-between pt-5 z-10 h-5">
-        <div className="nav-container flex justify-between w-[75%] mx-auto">
+        <div className="nav-container flex justify-between w-[90vw] mx-auto">
         <Link 
         to="/" 
-        className="logo mt-[20px] flex items-center gap-2" 
+        className="logo mt-[28px] flex items-center gap-2" 
         onClick={() => {
             setActive("");
             window.scrollTo(0,0)
@@ -38,7 +38,7 @@ function Navbar() {
         }>
         <img src={logo} alt="" className="  w-full h-20 object-contain" /> 
         </Link>  
-                     <ul className="list-none hidden sm:flex flex-row gap-10">
+                     <ul className="list-none hidden sm:flex flex-row gap-12 mt-4">
               {navLinks.map((Link) => ( 
             <li
             key={Link.id}
