@@ -1,10 +1,12 @@
+import { BrowserRouter } from "react-router-dom"
+
 import { Features, Footer, Hero, How, Navbar, Pricing, Team } from './components'
 
 function App() {
   
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
       <Hero />
       <Features />
@@ -12,7 +14,7 @@ function App() {
       <Pricing />
       <Team />
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 
