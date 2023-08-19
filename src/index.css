@@ -36,7 +36,7 @@ border: 1px solid rgba(123, 145, 246, 1);
 text-align: center;
 padding: 30px 10px;
 cursor: grab;
-transition: all .2s ease-in-out;
+transition: all .3s ease-in-out;
 }
 
 .features-card:hover{
@@ -64,8 +64,12 @@ transition: all .2s ease-in-out;
       display: none;
 
     }
+
 }
 
 @media screen and (max-width: 1200px) {
-
+  .featuresCardContainer {
+    flex-wrap: wrap;
+    padding-left: 10vw;
+  }
 }
