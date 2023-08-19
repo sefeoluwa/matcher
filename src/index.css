@@ -24,9 +24,23 @@ body {
   min-height: 100vh;
 }
 
-.hero-container{
- 
-  
+.features-card{
+  max-width: 353px;
+  /* From https://css.glass */
+background: rgba(123, 145, 246, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.4px);
+-webkit-backdrop-filter: blur(9.4px);
+border: 1px solid rgba(123, 145, 246, 1);
+text-align: center;
+padding: 30px 10px;
+cursor: grab;
+transition: all .2s ease-in-out;
+}
+
+.features-card:hover{
+  box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.6), 0px 6px 20px rgba(65, 105, 225, 0.6);
 }
 
 .hero-text{
