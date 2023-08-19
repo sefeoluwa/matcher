@@ -38,22 +38,27 @@ const features = [
 
 const howItWorks = [
   {
+    icon: '',
     title: 'Step 1',
     content: 'Upload your resume.'
   },
   {
+    icon: '',
     title: 'Step 2',
     content: 'Enter job description.'
   },
   {
+    icon: '',
     title: 'Step 3',
     content: 'AI powered analytics and resume review.'
   },
   {
+    icon: '',
     title: 'Step 4',
     content: 'Algorithm matches resume to job description.'
   },
   {
+    icon: '',
     title: 'Step 5',
     content: 'Download optimized resume.'
   },
