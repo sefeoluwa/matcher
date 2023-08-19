@@ -30,13 +30,14 @@ function Navbar() {
         <div className="nav-container flex justify-between w-[90vw] mx-auto">
         <Link 
         to="/" 
-        className="logo mt-[28px] flex items-center gap-2" 
+        className="logo mt-[28px] flex justify-center items-center" 
         onClick={() => {
             setActive("");
             window.scrollTo(0,0)
           }
         }>
-        <img src={logo} alt="" className="  w-full h-20 object-contain" /> 
+        <img src={logo} alt="" className="  w-full h-14 object-contain" /> 
+        <p className="text-[#02D8E8] font-bold">RESUME MATCHER</p>
         </Link>  
                      <ul className="list-none hidden sm:flex flex-row gap-12 mt-4">
               {navLinks.map((Link) => ( 
@@ -66,17 +67,18 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh] ">
-        <div className="nav-container pt-5 flex justify-between w-[90%]">
+      <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh]">
+        <div className="nav-container pt-9 flex justify-between w-[90%]">
         <Link 
         to="/" 
-        className="flex items-center gap-2" 
+        className="flex items-center mb-16 gap-2" 
         onClick={() => {
             setActive("");
             window.scrollTo(0,0)
           }
         }>
-        <img src={logo} alt="" className="w-[35vw] h-20  object-contain mt-[-10vh]" /> 
+        <img src={logo} alt="" className="w-[35vw] h-20  object-contain" /> 
+        <p className="text-[#02D8E8] w-1 font-bold">RESUME MATCHER</p>
         </Link>  
 
             {/* Mobile menu button (hamburger) */}
@@ -98,24 +100,30 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <AnimatePresence>
-      {isMobileMenuOpen && (
-          <motion.aside
-          initial={{ width: 0 }}
-          animate={{
-            width: 500
-          }}
-          exit={{
-            width: 0,
-            transition: { delay: 0.3, duration: 0.3 }
-          }}
-         >
-        <motion.div 
+  {isMobileMenuOpen && (
+    <motion.aside
+      initial={{ width: 0 }}
+      animate={{
+        width: 500
+      }}
+      exit={{
+        width: 0,
+        transition: { delay: 0.3, duration: 0.3 }
+      }}
+    >
+      <motion.div
         initial="closed"
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="container md:hidden flex flex-col fixed bg-[#5454D4] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[250px] items-end justify-center pr-[18vw] z-10 rounded-2xl ">
-            <ul className='list-none flex justify-end mb-4 items-start flex-1 flex-col gap-6'>
+        className="mobile-menu md:hidden flex flex-col fixed bg-secondary text-white h-[250px] z-10 rounded-2xl mr-8 items-center"
+        style={{
+          width: "250px",
+          top: "13vh",
+          right: "0",
+        }}
+      >
+      <ul className='list-none flex justify-end mb-4 items-start flex-1 flex-col gap-6'>
               {navLinks.map((nav) => (
                 <motion.li
                   variants={itemVariants}
@@ -134,16 +142,15 @@ function Navbar() {
             </ul>
           <motion.button
             variants={itemVariants}
-            className=" bg-primary sm:block w-[135px] h-[46px] rounded-[36px] mb-[40px] mr-[-6vw]"
+            className="nav-btn bg-primary sm:block w-[135px] h-[46px] rounded-[36px] mb-[40px]"
           >
             Sign In
           </motion.button>
-        </motion.div>
-        </motion.aside>
-      )}
-      
-
+      </motion.div>
+    </motion.aside>
+  )}
 </AnimatePresence>
+
     </>
   );
 }
