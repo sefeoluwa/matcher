@@ -79,42 +79,9 @@ const aboutUs = [
   },
 ]
 
-const footerData = [
-  {
-    title: 'Resume Matcher',
-    list: [
-      "Github Apache 2.0",
-    ]
-  },
-  {
-    title: 'Community',
-    list: [
-      'Dev Community Post',
-    ],
-  },
-  {
-    title: 'Find Us',
-    list: [
-      "Product Hunt",
-      "Discord",
-      'Alternative To',
-      'Toolify AI',
-    ],
-  },
-  {
-    title: 'GitHub',
-    list: [
-      'Creator',
-      'Contributors',
-      'Star Gazers',
-      'Forks'
-    ]
-  }
-]
-
 const plans = [
   {
-    title: "Starter",
+    title: "Use Once",
     price: "Free",
     specs: [
       "1 job description",
@@ -124,8 +91,8 @@ const plans = [
     button: "Get Started",
   },
   {
-    title: "Premium",
-    price: "$29/month",
+    title: "Monthly",
+    price: "$29",
     specs: [
       "Unlimited job descriptions",
       "Unlimited downloads",
@@ -134,8 +101,8 @@ const plans = [
     button: "Get Started",
   },
   {
-    title: "Advanced",
-    price: "$49/month",
+    title: "Yearly",
+    price: "$1200",
     specs: [
       "Unlimited job descriptions",
       "Unlimited downloads",
@@ -151,6 +118,5 @@ export {
     features,
     howItWorks,
     aboutUs,
-    footerData,
     plans,
 }
