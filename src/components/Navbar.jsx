@@ -26,11 +26,11 @@ function Navbar() {
   return (
     <>
        {/* Desktop Navbar */}
-       <nav className="nav-full sticky top-0 flex md:flex justify-between pt-5 z-10 h-5">
+       <nav className="nav-full bg-[#ffffff] sticky top-0 flex md:flex justify-between pt-5 z-10 h-[70px]">
         <div className="nav-container flex justify-between w-[90vw] mx-auto">
         <Link 
         to="/" 
-        className="logo mt-[28px] flex justify-center items-center" 
+        className="logo mb-[16px] flex justify-center items-center w-[10vw]" 
         onClick={() => {
             setActive("");
             window.scrollTo(0,0)
@@ -39,7 +39,7 @@ function Navbar() {
         <img src={logo} alt="" className="  w-full h-14 object-contain" /> 
         <p className="text-[#02D8E8] font-bold">RESUME MATCHER</p>
        </Link>  
-       <ul className="list-none hidden sm:flex flex-row gap-12 mt-4">
+       <ul className="list-none hidden sm:flex flex-row gap-12 ">
           {navLinks.map((Link) => ( 
             <li
             key={Link.id}
@@ -56,7 +56,7 @@ function Navbar() {
             onHoverStart={handleHover}
             onHoverEnd={() => controls.start({ x: 0 })}
             animate={controls}
-            className="hidden sm:block bg-[#8A2BE2] w-[135px] h-[46px] rounded-[36px]"
+            className="hidden sm:block bg-[#8A2BE2] w-[135px] h-[46px] rounded-[36px] mt-[-8px]"
           >
             Sign In
           </motion.button>
@@ -67,24 +67,23 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh]">
-        <div className="nav-container pt-9 flex justify-between w-[90%]">
-        <Link 
-        to="/" 
-        className="flex items-center mb-16 gap-2" 
-        onClick={() => {
-            setActive("");
-            window.scrollTo(0,0)
-          }
-        }>
-        <img src={logo} alt="" className="w-[35vw] h-20  object-contain" /> 
-        <p className="text-[#02D8E8] w-1 font-bold">RESUME MATCHER</p>
-        </Link>  
+      <nav className="mobileNav md:hidden flex justify-center fixed z-10 w-full h-[70px]">
+        <div className=" pt-7 flex justify-between w-[90%]">
+          <Link 
+          to="/" 
+          className="flex items-center w-[11vw] mb-16" 
+          onClick={() => {
+              setActive("");
+              window.scrollTo(0,0)
+            }
+          }>
+          <img src={logo} alt="" className="w-[35vw] h-16 object-contain" /> 
+          <p className="text-[#02D8E8] w-1 text-[14px] font-bold">RESUME MATCHER</p>
+          </Link>  
 
-            {/* Mobile menu button (hamburger) */}
-            <div
-              onClick={handleMobileMenuToggle}
-            
+          {/* Mobile menu button (hamburger) */}
+           <div
+            onClick={handleMobileMenuToggle}  
             >
              {isMobileMenuOpen ? (
                 <img src={close} alt="Close"  className="cursor-pointer"/>

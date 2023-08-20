@@ -24,6 +24,22 @@ body {
   min-height: 100vh;
 }
 
+.nav-full{
+background: rgba(0, 140, 149, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+border-bottom: 1px solid rgba(0, 140, 149, 1);
+}
+
+.mobileNav{
+  background: rgba(0, 140, 149, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+border-bottom: 1px solid rgba(0, 140, 149, 1);
+}
+
 .features-card{
   max-width: 353px;
   /* From https://css.glass */
@@ -67,6 +83,7 @@ border: 1px solid rgba(0, 140, 149, 1);
 .plans .cardContainer:nth-of-type(2) .pricingCard {
   background: rgba(0, 140, 149, 0.5);
 }
+
 
 
 
