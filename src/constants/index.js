@@ -68,12 +68,12 @@ const aboutUs = [
   {
     image: '',
     person: 'name',
-    about: 'some details'
+    about: 'CTO and Co-Founder'
   },
   {
     image: '',
     person: 'name',
-    about: 'some details'
+    about: 'CEO and Co-Founder'
   },
 ]
 
