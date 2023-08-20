@@ -38,7 +38,7 @@ useEffect (() => {
           data-aos-duration="2000"
           className='pricingCard w-[330px] h-[441px] bg-[#F7F7FB] p-[1vw] rounded-xl flex flex-col items-center pt-10 '
           >
-            <p className='text-[#CFD4D43] text[18px] leading-[28px] tracking-[-0.56px] pb-6'>{plan.title}</p>
+            <p className='text[18px] leading-[28px] tracking-[-0.56px] pb-6'>{plan.title}</p>
             <h3 className='text-white text-[50px] leading-[56px] tracking-[-1.03px] pb-6'>{plan.price}</h3>
             <ul className='flex flex-col'>
             {plan.specs.map((spec) => ( 
