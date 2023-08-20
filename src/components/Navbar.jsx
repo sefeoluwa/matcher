@@ -38,9 +38,9 @@ function Navbar() {
         }>
         <img src={logo} alt="" className="  w-full h-14 object-contain" /> 
         <p className="text-[#02D8E8] font-bold">RESUME MATCHER</p>
-        </Link>  
-                     <ul className="list-none hidden sm:flex flex-row gap-12 mt-4">
-              {navLinks.map((Link) => ( 
+       </Link>  
+       <ul className="list-none hidden sm:flex flex-row gap-12 mt-4">
+          {navLinks.map((Link) => ( 
             <li
             key={Link.id}
             className={`${
@@ -128,7 +128,7 @@ function Navbar() {
                 <motion.li
                   variants={itemVariants}
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`font-poppins font-medium  cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-slate-300"
                   }`}
                   onClick={() => {
