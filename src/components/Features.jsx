@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unknown-property */
 import { motion } from "framer-motion";
 import { SectionWrapper } from '../hoc';
@@ -17,7 +18,7 @@ const FeaturesCard = () => {
               speed:450
               }}
               variants={fadeIn("right", "spring", 0.2 * index, 0.75)} 
-            className="features-card">
+            className="features-card h-[300px]">
             <img src={feat.icon} alt="" />
             <h3 className="text-[25px] font-bold">{feat.title}</h3>
             <p className="text-[18px]">{feat.content}</p>
