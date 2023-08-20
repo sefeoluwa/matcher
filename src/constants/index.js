@@ -66,13 +66,15 @@ const howItWorks = [
 
 const aboutUs = [
   {
+    id: 'member1',
     image: '',
-    person: 'name',
+    person: 'John Doe',
     about: 'CTO and Co-Founder'
   },
   {
+    id: 'member2',
     image: '',
-    person: 'name',
+    person: 'Alfred Doe',
     about: 'CEO and Co-Founder'
   },
 ]
