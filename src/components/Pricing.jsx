@@ -26,25 +26,25 @@ useEffect (() => {
     </div>
 
     <div className="bottom">
-      <div className='flex justify-evenly plans flex-wrap'>
+      <div className='flex justify-evenly plans flex-wrap gap-10'>
         {plans.map((plan) => (
           <Tilt  
           key={plan.title} 
-          
+          className="cardContainer "
           >
             <div 
           data-aos="flip-up"
           data-aos-duration="2000"
-          className='w-[330px] h-[441px] bg-[#F7F7FB] p-[1vw]rounded-xl flex flex-col items-center pt-10 mt-10'
+          className='pricingCard w-[330px] h-[441px] bg-[#F7F7FB] p-[1vw] rounded-xl flex flex-col items-center pt-10 '
           >
-            <p className='text-[#696871] text[18px] leading-[28px] tracking-[-0.56px] pb-6'>{plan.title}</p>
-            <h3 className='text-black text-[50px] leading-[56px] tracking-[-1.03px] pb-6'>{plan.price}</h3>
+            <p className='text-[#CFD4D43] text[18px] leading-[28px] tracking-[-0.56px] pb-6'>{plan.title}</p>
+            <h3 className='text-white text-[50px] leading-[56px] tracking-[-1.03px] pb-6'>{plan.price}</h3>
             <ul className='flex flex-col'>
             {plan.specs.map((spec) => ( 
-            <li key={spec} className='text-[#696871] text[17px] leading-[50px] tracking-[-0.53px] text-center'>{spec}</li>
+            <li key={spec} className='text-[#CFD4D43] text[17px] leading-[50px] tracking-[-0.53px] text-center'>{spec}</li>
           ))}
             </ul>
-            <button className='text-[#5454D4] bg-white w-[285px] h-[60px] text[18px] leading-[28px] tracking-[-0.56px] font-bold rounded-[12px] mt-6' >{plan.button}</button>
+            <button className='text-white bg-secondary w-[285px] h-[60px] text[18px] leading-[28px] tracking-[-0.56px] font-bold rounded-[12px] mt-6' >{plan.button}</button>
           </div>
           </Tilt>
         ))}
