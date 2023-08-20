@@ -110,10 +110,45 @@ const footerData = [
   }
 ]
 
+const plans = [
+  {
+    title: "Starter",
+    price: "Free",
+    specs: [
+      "1 job description",
+      "1 download",
+      "Limited Support",
+    ], 
+    button: "Get Started",
+  },
+  {
+    title: "Premium",
+    price: "$29/month",
+    specs: [
+      "Unlimited job descriptions",
+      "Unlimited downloads",
+      "Premium Support",
+    ], 
+    button: "Get Started",
+  },
+  {
+    title: "Advanced",
+    price: "$49/month",
+    specs: [
+      "Unlimited job descriptions",
+      "Unlimited downloads",
+      "Premium Support",
+    ], 
+    button:"Get Started",
+  }
+]
+
+
 export {
     navLinks,
     features,
     howItWorks,
     aboutUs,
     footerData,
+    plans,
 }
