@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { SectionWrapper } from "../hoc"
 import { plans } from "../constants"
 import "aos/dist/aos.css"
@@ -26,7 +27,7 @@ useEffect (() => {
     </div>
 
     <div className="bottom">
-      <div className='flex justify-evenly plans flex-wrap gap-10'>
+      <div className='flex justify-evenly plans flex-wrap gap-12'>
         {plans.map((plan) => (
           <Tilt  
           key={plan.title} 
