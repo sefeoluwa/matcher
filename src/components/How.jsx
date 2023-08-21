@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { SectionWrapper } from '../hoc'
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from '../styles';
 import { howItWorks } from '../constants';
@@ -9,8 +8,13 @@ import { textVariant } from "../utils/motion";
 
 const HowSteps = ({ howItWorks }) => {
   return (
-    <VerticalTimelineElement contentStyle={{background: '#1d1836', color: '#fff'}}
-    contentArrowStyle={{ borderRight:'7px solid #232631'}}
+    <VerticalTimelineElement 
+    contentStyle={{background: '#050827', color: '#fff'}}
+    icon={
+      <div className="flex justify-center items-center w-full h-full bg-primary rounded-full">
+        <img src={howItWorks.iconBg} alt= "steps animated arrow" className="w-[60%] h-[60%] object-contain"/>
+      </div>
+   }
     >
        <div>
           <img src={howItWorks.icon} alt="" />
