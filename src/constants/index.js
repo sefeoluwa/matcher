@@ -1,5 +1,7 @@
 import {
-
+  scanner,
+  pdf,
+  launch
 
 } from '../assets';
 
@@ -20,17 +22,17 @@ const navLinks = [
 
 const features = [
   {
-    icon: '',
+    icon: launch,
     title: "Simple",
     content: "Creating a powerful resume shouldn't feel like rocket science. Resume Matcher tool redefines simplicity, making the process accessible to everyone on the job search journey.",
   },
   {
-    icon: '',
+    icon: scanner,
     title: "ATS friendly",
     content: "Resume Matcher is your ally in navigating the digital screening process. Optimze your resume with the right features to pass the ATS keyword scanner.",
   },
   {
-    icon: '',
+    icon: pdf,
     title: "Awesome design",
     content: "Say goodbye to generic templates. We offer a collection of beautifully crafted designs that allow your resume to stand out in a sea of monotonous documents."
   }
