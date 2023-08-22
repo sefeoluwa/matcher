@@ -3,19 +3,19 @@
 function Footer() {
   return (
     <>
-    <footer>
+    <footer className="flex justify-between h-[35vh] p-10 border-t-[1px] border-sky-100">
       <div className="">
-        <h3>Resume Matcher</h3>
+        <h3 className="font-extrabold text-[16px]">Resume Matcher</h3>
         <p>GitHub Apache 2.0</p>
       </div>
 
       <div className="">
-        <h2>Community</h2>
+        <h3 className="font-extrabold text-[16px]">Community</h3>
         <p>DEV Community Post</p>
       </div>
 
       <div className="">
-        <h3>Find Us</h3>
+        <h3 className="font-extrabold text-[16px]">Find Us</h3>
         <ul>
           <li>Product Hunt</li>
           <li>Discord</li>
@@ -25,7 +25,7 @@ function Footer() {
       </div>
 
       <div className="">
-        <h3>GitHub</h3>
+        <h3 className="font-extrabold text-[16px]">GitHub</h3>
         <ul>
           <li>Creator</li>
           <li>Contributors</li>
