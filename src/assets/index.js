@@ -6,6 +6,7 @@ import download from './download.gif'
 import launch from './launch.png'
 import pdf from './pdf.png'
 import scanner from './scanner.webp'
+import Vector from './Vector.png'
 
 export {
     logo,
@@ -16,4 +17,5 @@ export {
     launch,
     pdf,
     scanner,
+    Vector,
 }
