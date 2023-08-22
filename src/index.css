@@ -90,6 +90,10 @@ border: 1px solid rgba(0, 140, 149, 1);
   background: rgba(0, 140, 149, 0.5);
 }
 
+footer > div > p, ul > li {
+  cursor: pointer;
+  color: ;
+}
 
 
 
