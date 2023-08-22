@@ -92,8 +92,8 @@ border: 1px solid rgba(0, 140, 149, 1);
 
 footer > div > p, ul > li {
   cursor: pointer;
-  color: ;
 }
+
 
 
 
@@ -107,11 +107,13 @@ footer > div > p, ul > li {
 }
 
 @media screen and (max-width: 800px) {
-    .nav-full{
-      display: none;
+  .nav-full{
+    display: none;
+  }
 
-    }
-
+  .git-div{
+   margin-right: 14vw;
+  }
 }
 
 @media screen and (max-width: 1200px) {
