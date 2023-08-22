@@ -5,8 +5,10 @@ import { styles } from '../styles'
 function Team() {
   return (
     <>
-    <div className={`${styles.sectionHeadText} text-center`}>Meet The Team</div>
-    <div className="">
+    <section className='h-[90vh]'> 
+    <h2 className={`${styles.sectionHeadText} text-center`}>Meet The Team</h2>
+
+    <div className="flex justify-center gap-20">
       {aboutUs.map((i) => (
         <div className="" key={i.id}>
           <img src={i.image} alt="" />
@@ -15,6 +17,7 @@ function Team() {
         </div>
       ))}
     </div>
+    </section>
     </>
   )
 }
