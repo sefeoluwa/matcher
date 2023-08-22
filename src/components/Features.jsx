@@ -5,6 +5,7 @@ import { SectionWrapper } from '../hoc';
 import { features } from '../constants';
 import { Tilt } from 'react-tilt';
 import { fadeIn } from '../utils/motion';
+import { styles } from "../styles";
 
 const FeaturesCard = () => {
   return (
@@ -40,7 +41,7 @@ function Features() {
   return (
     <>
     <div className="heading">
-      <h2 className='font-bold text-[30px]'>Powerful features to help you pass the screening stage and get hired faster.</h2>
+      <h2 className={`${styles.sectionHeadText} text-center`}>Powerful features</h2>
     </div>
 
     <FeaturesCard />
