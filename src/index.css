@@ -93,6 +93,22 @@ border: 1px solid rgba(0, 140, 149, 1);
   background: rgba(0, 140, 149, 0.5);
 }
 
+.teammate{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.teamImageContainer{
+  width: 300px;
+  height: 280px;
+  display: flex;
+  justify-content: center; 
+  align-items: end;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
 footer > div > p, ul > li {
   cursor: pointer;
 }
