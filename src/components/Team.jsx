@@ -6,17 +6,17 @@ import { styles } from '../styles'
 function Team() {
   return (
     <>
-    <section className='h-[90vh]'> 
-    <h2 className={`${styles.sectionHeadText} text-center`}>Meet The Team</h2>
+    <section className='mb-12'> 
+    <h2 className={`${styles.sectionHeadText} text-center pb-10 `}>Meet The Team</h2>
 
     <div className="flex justify-center gap-20 flex-wrap">
       {aboutUs.map((i) => (
         <div className="text-center" key={i.id}>
-         <div className="bg-secondary teamImageContainer">
+         <div className="teamImageContainer">
          <img src={i.image} alt="Team memeber photo" className='teammate'/>
          </div>
-          <h3>{i.person}</h3>
-          <p>{i.about}</p>
+          <h3 className='text-[20px] font-bold mt-4'>{i.person}</h3>
+          <p className='text-[17px]'>{i.about}</p>
         </div>
       ))}
     </div>
