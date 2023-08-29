@@ -56,7 +56,7 @@ function Navbar() {
             onHoverStart={handleHover}
             onHoverEnd={() => controls.start({ x: 0 })}
             animate={controls}
-            className="hidden sm:block bg-[#8A2BE2] w-[135px] h-[46px] rounded-[36px] mt-[-8px]"
+            className="hidden sm:block bg-secondary w-[135px] h-[46px] rounded-[36px] mt-[-8px]"
           >
             Sign In
           </motion.button>
@@ -107,7 +107,7 @@ function Navbar() {
       }}
       exit={{
         width: 0,
-        transition: { delay: 0.3, duration: 0.3 }
+        transition: { delay: 0.2, duration: 0.3 }
       }}
     >
       <motion.div
@@ -115,7 +115,7 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="mobile-menu md:hidden flex flex-col fixed font-bold text-white h-[250px] z-10 rounded-2xl mr-8 items-center"
+        className="mobile-menu md:hidden flex flex-col fixed font-bold text-white h-[300px] z-10 rounded-2xl mr-8 items-center"
         style={{
           width: "250px",
           top: "13vh",
