@@ -129,8 +129,18 @@ footer > div > p, ul > li {
   cursor: pointer;
 }
 
+input{
+  outline: none;
+  background: rgba(0, 140, 149, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all .2s infinite;
+}
 
-
+input:focus{
+  box-shadow: 0px 2px 5px rgba(0, 255, 255, 0.6), 0px 6px 20px rgba(65, 105, 225, 0.6);
+}
 
 
 
