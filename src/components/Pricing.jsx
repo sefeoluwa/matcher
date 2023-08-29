@@ -5,14 +5,14 @@ import "aos/dist/aos.css"
 import AOS from 'aos'
 import { useEffect } from "react"
 import { styles } from '../styles'
-import { Tilt } from 'react-tilt'
-
 
 
 function Pricing() {
 
 useEffect (() => {
-  AOS.init({duration: 1500});
+  AOS.init(
+    {duration: 2000, once: true}
+    );
 }, []);
 
   return (
@@ -20,7 +20,7 @@ useEffect (() => {
     <div 
     data-aos="fade-down"
     data-aos-easing="linear"
-    data-aos-duration="1500"
+    data-aos-duration="2000"
     className="top flex justify-center  mb-[7vh] mt-[4vh]"
     >
       <h2 className={`${styles.sectionHeadText} text-center`}>The right plans for the right resume.</h2>
@@ -29,7 +29,7 @@ useEffect (() => {
     <div className="bottom">
       <div className='flex justify-evenly plans flex-wrap gap-12'>
         {plans.map((plan) => (
-          <Tilt  
+          <div  
           key={plan.title} 
           className="cardContainer "
           >
@@ -47,7 +47,7 @@ useEffect (() => {
             </ul>
             <button className='text-white bg-secondary w-[285px] h-[60px] text[18px] leading-[28px] tracking-[-0.56px] font-bold rounded-[12px] mt-6' >{plan.button}</button>
           </div>
-          </Tilt>
+          </div>
         ))}
       </div>
     </div>
