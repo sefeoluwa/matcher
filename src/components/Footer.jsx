@@ -40,7 +40,7 @@ function Footer() {
      </div>
 
      <div className="flex justify-between flex-wrap gap-6 pb-5">
-      <h2> <span className="text-sky-600">Apache 2.0 License</span> © Resume Matcher Contributors</h2>
+      <h2> <span className="text-[#209cff]">Apache 2.0 License</span> © Resume Matcher Contributors</h2>
       <div className="flex justify-between w-[150px]">
       <FontAwesomeIcon icon={faEnvelope} className='cursor-pointer'/>
       <FaGithub className='cursor-pointer'/>
