@@ -47,7 +47,16 @@ function Footer() {
       <FaDiscord className='cursor-pointer'/>
       <FaTwitter className='cursor-pointer'/>
       </div>
+
+      <form action="">
+      <input type="email" id='email' className='p-2 h-8' required/>
+      <label htmlFor="email">
+        <button type='submit'>Get in touch</button>
+      </label>
+     </form>
      </div>
+
+    
     </footer>
     </>
   )
