@@ -2,6 +2,8 @@ import {
   scanner,
   pdf,
   launch,
+  avatarA,
+  avatarB,
 
 } from '../assets';
 
@@ -65,13 +67,13 @@ const howItWorks = [
 const aboutUs = [
   {
     id: 'member1',
-    image: '',
+    image: avatarA,
     person: 'John Doe',
     about: 'CTO and Co-Founder'
   },
   {
     id: 'member2',
-    image: '',
+    image: avatarB,
     person: 'Alfred Doe',
     about: 'CEO and Co-Founder'
   },
