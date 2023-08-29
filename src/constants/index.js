@@ -57,7 +57,7 @@ const howItWorks = [
   },
   {
     num: '04.',
-    title: 'Algorithm matches resume to job description.',
+    title: 'AI matches resume to job description.',
     content: 'Our AI algorithm will align your resume with the job description, highlighting relevant skills and keywords.',
   },
 ]
