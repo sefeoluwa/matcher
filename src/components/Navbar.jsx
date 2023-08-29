@@ -115,7 +115,7 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="mobile-menu md:hidden flex flex-col fixed bg-secondary text-white h-[250px] z-10 rounded-2xl mr-8 items-center"
+        className="mobile-menu md:hidden flex flex-col fixed font-bold text-white h-[250px] z-10 rounded-2xl mr-8 items-center"
         style={{
           width: "250px",
           top: "13vh",
@@ -127,7 +127,7 @@ function Navbar() {
                 <motion.li
                   variants={itemVariants}
                   key={nav.id}
-                  className={`font-poppins font-medium  cursor-pointer text-[16px] ${
+                  className={`font-poppins font-bold  cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-slate-300"
                   }`}
                   onClick={() => {
@@ -141,7 +141,7 @@ function Navbar() {
             </ul>
           <motion.button
             variants={itemVariants}
-            className="nav-btn bg-primary sm:block w-[135px] h-[46px] rounded-[36px] mb-[40px]"
+            className="nav-btn bg-secondary sm:block w-[135px] h-[46px] rounded-[36px] mb-[40px]"
           >
             Sign In
           </motion.button>
