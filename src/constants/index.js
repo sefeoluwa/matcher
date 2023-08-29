@@ -2,7 +2,6 @@ import {
   scanner,
   pdf,
   launch,
-  download
 
 } from '../assets';
 
@@ -41,29 +40,25 @@ const features = [
 
 const howItWorks = [
   {
-    iconBg: download,
-    title: 'Step 1',
-    content: 'Upload your resume.'
+    num: '01.',
+    title: 'Upload your resume.',
+    content: 'Upload your current resume to begin analysis.',
+    
   },
   {
-    iconBg: download,
-    title: 'Step 2',
-    content: 'Enter job description.'
+    num: '02.',
+    title: 'Enter job description.',
+    content: 'Paste or upload job description as file.',
   },
   {
-      iconBg: download,
-    title: 'Step 3',
-    content: 'AI powered analytics and resume review.'
+    num: '03.',
+    title: 'AI powered analytics and resume review.',
+    content: 'Get your resume reviewed and compared with the job description.',
   },
   {
-      iconBg: download,
-    title: 'Step 4',
-    content: 'Algorithm matches resume to job description.'
-  },
-  {
-      iconBg: download,
-    title: 'Step 5',
-    content: 'Download optimized resume.'
+    num: '04.',
+    title: 'Algorithm matches resume to job description.',
+    content: 'Our AI algorithm will align your resume with the job description, highlighting relevant skills and keywords.',
   },
 ]
 
