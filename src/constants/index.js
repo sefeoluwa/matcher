@@ -20,6 +20,10 @@ const navLinks = [
     id: 'about',
     title: 'About Us',
   },
+  {
+    id: 'blog',
+    title: 'Blog',
+  }
 ];
 
 const features = [
