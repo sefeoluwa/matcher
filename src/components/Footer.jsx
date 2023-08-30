@@ -48,10 +48,10 @@ function Footer() {
       <FaTwitter className='cursor-pointer'/>
       </div>
 
-      <form action="">
+      <form action="" className='flex flex-wrap gap-4'>
       <input type="email" id='email' className='p-2 h-8' required/>
-      <label htmlFor="email">
-        <button type='submit'>Get in touch</button>
+      <label htmlFor="email" className=''>
+        <button type='submit' className='ml-3 bg-[#8A2BE2] w-[135px] h-[46px] rounded-[36px] mt-[-8px]'>Get in touch</button>
       </label>
      </form>
      </div>
