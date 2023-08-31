@@ -1,15 +1,13 @@
-import { Features, Footer, Hero, How, Navbar, Pricing, Team } from '../components'
+import { Features, Footer, Hero, How, Navbar, Pricing, Team } from '../homeComponents'
 
 function Home() {
   return (
    <>
-     <Navbar />
       <Hero />
       <Features />
       <How />
       <Pricing />
       <Team />
-      <Footer />
    </>
   )
 }
