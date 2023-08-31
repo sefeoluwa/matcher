@@ -1,12 +1,18 @@
-import { BrowserRouter } from "react-router-dom"
-import { Home }  from './pages'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { Home, CreatePost, Login } from './pages'
+
+
 
 function App() {
+
   return (
-    <BrowserRouter>
-     <Home />
-    </BrowserRouter>
-  
+    <Router>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/createpost" element={<CreatePost />} />
+          <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   )
 }
 
