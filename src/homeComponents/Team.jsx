@@ -5,7 +5,7 @@ import { styles } from '../styles'
 function Team() {
   return (
     <>
-    <section className='mb-12'> 
+    <section className='mb-12' id='about'> 
     <h2 className={`${styles.sectionHeadText} text-center pb-10 `}>Meet The Team</h2>
 
     <div className="flex justify-center gap-20 flex-wrap">

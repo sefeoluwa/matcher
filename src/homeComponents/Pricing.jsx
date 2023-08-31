@@ -21,6 +21,7 @@ useEffect (() => {
     data-aos-easing="linear"
     data-aos-duration="2000"
     className="top flex justify-center  mb-[7vh] mt-[4vh]"
+    id="pricing"
     >
       <h2 className={`${styles.sectionHeadText} text-center`}>The right plans for the right resume.</h2>
     </div>
