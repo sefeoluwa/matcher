@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'
 import { logo, menu, close } from "../assets";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { sideVariants, itemVariants } from '../utils/motion'
@@ -48,7 +49,9 @@ function Navbar() {
             }hover:text-white text-[18px] font-medium cursor-pointer`}
             onClick={() => setActive(Link.title)}
             >
-              <a href={`#${Link.id}`}>{Link.title}</a>
+            <ScrollLink to={Link.id} smooth={true} duration={500}>
+                  {Link.title}
+                </ScrollLink>
             </li>
           ))}
           </ul>
@@ -135,7 +138,9 @@ function Navbar() {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                <ScrollLink to={nav.id} smooth={true} duration={500}>
+                  {nav.title}
+                </ScrollLink>
                 </motion.li>
               ))}
             </ul>
