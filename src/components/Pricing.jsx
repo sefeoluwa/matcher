@@ -55,4 +55,4 @@ useEffect (() => {
   )
 }
 
-export default SectionWrapper(Pricing, 'pricing')
+export default Pricing

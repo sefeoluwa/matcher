@@ -23,4 +23,4 @@ function Hero() {
   )
 }
 
-export default SectionWrapper(Hero, '')
+export default Hero

@@ -47,4 +47,4 @@ function Features() {
   )
 }
 
-export default SectionWrapper(Features, '')
+export default Features

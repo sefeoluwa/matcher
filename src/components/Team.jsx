@@ -25,4 +25,4 @@ function Team() {
   )
 }
 
-export default SectionWrapper(Team, 'about')
+export default Team

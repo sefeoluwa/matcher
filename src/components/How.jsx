@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 import { SectionWrapper } from '../hoc'
 import { styles } from '../styles';
@@ -23,4 +24,4 @@ function How() {
   )
 }
 
-export default SectionWrapper(How, '')
+export default How
