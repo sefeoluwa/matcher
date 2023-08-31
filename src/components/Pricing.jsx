@@ -1,5 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-import { SectionWrapper } from "../hoc"
 import { plans } from "../constants"
 import "aos/dist/aos.css"
 import AOS from 'aos'

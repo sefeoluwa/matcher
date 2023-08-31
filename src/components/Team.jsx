@@ -1,6 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
 import {aboutUs} from '../constants'
-import { SectionWrapper } from '../hoc'
 import { styles } from '../styles'
 
 function Team() {

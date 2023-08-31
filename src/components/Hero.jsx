@@ -1,4 +1,3 @@
-import { SectionWrapper }from '../hoc'
 import { styles } from '../styles'
 import { Vector } from '../assets'
 

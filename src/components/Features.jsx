@@ -1,7 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unknown-property */
 import { motion } from "framer-motion";
-import { SectionWrapper } from '../hoc';
 import { features } from '../constants';
 import { fadeIn } from '../utils/motion';
 import { styles } from "../styles";
